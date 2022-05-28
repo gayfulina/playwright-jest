@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "rimraf -f screenshots; mkdir screenshots",
     "test": "jest"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^27.5.1",
+    "jest-html-reporters": "^3.0.8",
     "jest-playwright-preset": "^1.7.2",
     "playwright": "^1.22.2"
   }
